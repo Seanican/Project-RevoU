@@ -58,11 +58,6 @@ header {
     display: block;
 }
 
-.logo {
-    height: 100%;
-    width: 50px;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -70,15 +65,29 @@ header {
     padding: 10px 0px;
 }
 
+.logo {
+    height: 100%;
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+}
+
 .menu-item {
     border: 1px solid;
     padding: 4px 10px;
-    border-radius: 8px;
-    background-color: bisque;
-    color: maroon;
+    border-radius: 5px;
+    background-color: maroon;
+    color: beige;
     text-decoration: none;
 }
 
+
+/* Content */
+main {
+    margin-bottom: 20px;
+}
 .hero-title {
     display: flex;
     flex-direction: column;
@@ -103,6 +112,8 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    margin-bottom: 10px;
+    
 }
 
 .about-contact {
@@ -149,9 +160,12 @@ header {
     width: 120px;
 }
 
+.about-information {
+    margin-bottom: 50px;
+}
+
 .information-title{
     font-size: 16px;
-    color: gray;
     margin-bottom: 20px;
 }
 
@@ -179,6 +193,10 @@ header {
     font-size: 25px;
 }
 
+.list-paragraf-info {
+    color: gray;
+}
+
 .contact {
     width: 40%;
 }
@@ -187,9 +205,13 @@ header {
 .contact-card {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 70px;
     padding: 40px;
-    background-color: rgb(204, 204, 204);
+    background-color: maroon;
+    color: beige;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .card-title > h4 {
@@ -201,7 +223,7 @@ header {
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .input {
@@ -236,4 +258,111 @@ form > input {
     background-color: bisque;
     color: maroon;
     font-weight: 800;
+    margin-top: 20px;
+}
+
+/* Our Package */
+.package-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 50px;
+    font-weight: 600;
+    background-color: maroon;
+    color: beige;
+}
+
+.package {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.package-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.list-package > li {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.list-icon {
+    background-color: maroon;
+    color: beige;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.list-paragraf {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    
+}
+
+.list-paragraf > h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.package-closing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding: 50px;
+}
+
+.package-closing > h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.call {
+    padding: 15px 50px;
+    background-color: maroon;
+    border-color: maroon;
+    border-radius: 10px;
+}
+
+.call > a {
+    color: beige;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Footer */
+.footer-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+    color: maroon;
+}
+
+.footer-content > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
