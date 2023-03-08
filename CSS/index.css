@@ -65,22 +65,73 @@ header {
     padding: 10px 0px;
 }
 
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+    .about-contact {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .about > .slideshow {
+        align-self: center;
+        width: 100%;
+    }
+    .slideshow > img {
+        height: 300px;
+        width: 100%;
+    }
+    .information-title {
+        text-align: justify;
+    }
+    .information-list > li {
+        flex-direction: column;
+        text-align: justify;
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    #package-list {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .package-list {
+        align-items: center;
+    }
+    
+}
+
 .logo {
     height: 100%;
-    width: 50px;
+    width: 150px;
 }
 
 .menu {
     display: flex;
+    
+    
 }
 
 .menu-item {
     border: 1px solid;
-    padding: 4px 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     background-color: maroon;
     color: beige;
     text-decoration: none;
+    text-align: center;
 }
 
 
@@ -110,7 +161,7 @@ main {
     width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     gap: 40px;
     margin-bottom: 10px;
     
@@ -122,9 +173,43 @@ main {
     justify-content: center;
 }
 
-.about-img {
+.slideshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+}
+
+.slideshow-img {
     height: 400px;
-    width: 80%;
+    width: 100%;
+}
+
+.slideshow-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideshow-button > button {
+    padding: 5px 20px;
+    background-color: maroon;
+    border-color: maroon;
+    color: beige;
+    border-radius: 10px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-action {
+    margin-left: 50px;
 }
 
 .content-action > p {
@@ -137,6 +222,7 @@ main {
     display: flex;
     gap: 20px;
     align-items: center;
+    margin-left: 50px;
 }
 
 .content-person > img {
@@ -147,6 +233,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-items: center;
+}
+
+.person-info > h6 {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .person-info > p{
@@ -166,6 +257,7 @@ main {
 
 .information-title{
     font-size: 16px;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
@@ -182,8 +274,8 @@ main {
 }
 
 .list-number {
-    background-color: gray;
-    color: white;
+    background-color: maroon;
+    color: beige;
     height: 50px;
     width: 50px;
     display: flex;
@@ -202,11 +294,12 @@ main {
 }
 
 /* Card About */
+
 .contact-card {
     display: flex;
     flex-direction: column;
     gap: 70px;
-    padding: 40px;
+    padding: 50px;
     background-color: maroon;
     color: beige;
     margin-top: 10px;
@@ -273,20 +366,14 @@ form > input {
     color: beige;
 }
 
-.package {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-}
-
 .package-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 30px;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    gap: 50px;
+    padding: 10px;
 }
 
 .list-package > li {
@@ -318,6 +405,7 @@ form > input {
 .list-paragraf > h5 {
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 #call-us {
@@ -329,13 +417,20 @@ form > input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     padding: 50px;
 }
 
-.package-closing > h1 {
+.package-closing > h2 {
     font-weight: 600;
     font-size: 50px;
+    text-align: center;
+
+}
+
+.package-closing > h5 {
+    text-align: center;
 }
 
 .call {
