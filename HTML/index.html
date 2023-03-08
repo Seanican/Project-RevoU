@@ -60,15 +60,15 @@
                             <ul class="information-list">
                                 <li>
                                    <div class="list-number">1</div>
-                                   <div class="list-paragraf-info">Your first feature</div>
+                                   <div class="list-paragraf"><p>Your first feature</p></div>
                                 </li>
                                 <li>
                                     <div class="list-number">2</div>
-                                    <div class="list-paragraf-info">Your first feature</div>
+                                    <div class="list-paragraf"><p>Your first feature</p></div>
                                  </li>
                                 <li>
                                     <div class="list-number">3</div>
-                                    <div class="list-paragraf-info">Your first feature</div>
+                                    <div class="list-paragraf"><p>Your first feature</p></div>
                                  </li>
                                  
                             </ul>
@@ -86,26 +86,42 @@
                                 </p>
                             </div>
                             <!--Form-->
-                            <form action="GET">
+                            <form class="costumer-form" name="costumer-form" onsubmit="return validateForm()">
                                 <div class="input">
                                     <label for="nama">Your Name :</label>
-                                    <input type="text" value="Nama lengkap anda">
+                                    <input type="text" placeholder="Nama lengkap anda" name="full-name">
                                 </div>
                                 <div class="input">
                                     <label for="email">Email :</label>
-                                    <input type="text" value="Nama lengkap anda">
+                                    <input type="text" placeholder="Address Email" name="email">
                                 </div>
                                 <div class="input">
                                     <label for="destinasi">Choose Your Detination </label>
-                                    <select name="" id="">
-                                        <option value="Konoha">Konoha Gakure</option>
-                                        <option value="borObdur">Bor-O-Bdur</option>
-                                        <option value="kotaTishri">Kota Tishri</option>
-                                        <option value="alchemis">Alchemis</option>
+                                    <select name="destination">
+                                        <option id="Select Your Destination" value="Select Your Destination">Select Your Destination</option>
+                                        <option id="Konoha" value="Konoha">Konoha Gakure</option>
+                                        <option id="borObdur" value="borObdur">Bor-O-Bdur</option>
+                                        <option id="kotaTishri" value="kotaTishri">Kota Tishri</option>
+                                        <option id="alchemis" value="alchemis">Alchemis</option>
                                 </select>
                                 </div>
                                 <input type="submit" value="SEND">
                             </form>
+                            <!--Validation Form-->
+                            <script>
+                                function validateForm() {
+                                    /*Mengambil Nilai*/
+                                    var name = document.forms ["costumer-form"] ["full-name"].value;
+                                    var email = document.forms ["costumer-form"] ["email"].value;
+                                    var destination = document.forms ["costumer-form"] ["destination"].value;
+                                    console.log({ name, email, destination });
+                                    /*Validasi Form*/
+                                    if ( name =="" || email =="" || destination =="" || destination =="Select Your Destination") {
+                                        alert ("Input tidak boleh kosong");
+                                        return false;
+                                    }
+                                } 
+                            </script>
                         </div>
                     </div>
                 </div>

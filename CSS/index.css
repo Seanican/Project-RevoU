@@ -193,7 +193,7 @@ main {
     font-size: 25px;
 }
 
-.list-paragraf-info {
+.list-paragraf > p {
     color: gray;
 }
 
