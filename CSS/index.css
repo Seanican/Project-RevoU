@@ -110,7 +110,6 @@ header {
     .package-list {
         align-items: center;
     }
-    
 }
 
 .logo {
@@ -283,6 +282,10 @@ main {
     align-items: center;
     border-radius: 50%;
     font-size: 25px;
+}
+
+#list-number {
+    width: 56px;
 }
 
 .list-paragraf > p {
