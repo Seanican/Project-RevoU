@@ -213,7 +213,7 @@ main {
 
 .content-action > p {
     font-style: italic;
-    color: gray;
+    color: rgb(87, 87, 87);
     margin-bottom: 20px;
 }
 
@@ -241,7 +241,7 @@ main {
 
 .person-info > p{
     font-style: italic;
-    color: gray;
+    color: rgb(87, 87, 87);
     margin-top: 10px;
 }
 
@@ -289,7 +289,7 @@ main {
 }
 
 .list-paragraf > p {
-    color: gray;
+    color: rgb(87, 87, 87);
 }
 
 .contact {
