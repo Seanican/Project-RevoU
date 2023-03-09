@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agent | Expedia</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     
 </head>
 <body>
@@ -13,7 +13,7 @@
     <header>
         <nav class="container">
             <div class="navbar">
-                <img class="logo" src="pngwing.com (2).png" alt="logo">
+                <img class="logo" src="assets/Logo-travel.png" alt="logo">
                 <div class="menu">
                     <a class="menu-item" href="#hero">Home</a>
                     <a class="menu-item" href="#hero-package">Our Package</a>
@@ -41,41 +41,15 @@
                     <div class="about">
                         <!-- Ini slide show -->
                         <div class="slideshow" id="slideshow">
-                            <img class="slideshow-img" src="Penjara bayangan di bawah bayangan.jpeg" alt="Penjara bayangan di bawah bayangan">
-                            <img class="slideshow-img" src="Kota Zaramaraz.jpg" alt="Kota Zaramaraz">
-                            <img class="slideshow-img" src="Kota Illos.jpg" alt="kota Tishri">
+                            <img class="slideshow-img" src="assets/Penjara-bayangan-di-bawah-bayangan.jpeg" alt="Penjara bayangan di bawah bayangan">
+                            <img class="slideshow-img" src="assets/Kota-Zaramaraz.jpg" alt="Kota Zaramaraz">
+                            <img class="slideshow-img" src="assets/Kota-llos.jpg" alt="kota Ilos">
                             <div class="slideshow-button">
                                 <button onclick="plusDivs(-1)">Previous</button>
                                 <button onclick="plusDivs(1)">Next</button>
                             </div>
                         </div>
 
-                        <script>
-                            var slideIndex = 1;
-                            showDivs(slideIndex);
-
-                            function plusDivs(n) {
-                                showDivs((slideIndex += n));
-                            }
-
-                            function showDivs(n) {
-                                var i;
-                                var imgList = document.getElementsByClassName("slideshow-img");
-                                if (n > imgList.length) slideIndex = 1;
-                                else if (n < 1) slideIndex = imgList.length; 
-                                //untuk menampilkan salah satu img
-                                for(i = 0; i < imgList.length; i ++) {
-                                    imgList[i].style.display = "none";
-                                }
-                                // 1 2 3
-                                // 0 1 2
-                                imgList[slideIndex - 1].style.display = "block";
-                            }
-                            /* Ini untuk auto slide
-                            setInterval(() => {
-                                plusDivs(1);
-                            }, 2000);*/
-                        </script>
                         <!-- Person Experience -->
                         <div class="about-content">
                             <div class="content-action">
@@ -85,7 +59,7 @@
                                 </p>
                             </div>
                             <div class="content-person">
-                                <img src="jihyo.jpg" alt="" width="50px" height="50px">
+                                <img src="assets/jihyo.jpg" alt="" width="50px" height="50px">
                                 <div class="person-info">
                                     <h6>Agatha Chantika</h6>
                                     <p>Pegawai Negeri, 24 Tahun</p>
@@ -156,21 +130,6 @@
                                 </div>
                                 <input type="submit" value="SEND">
                             </form>
-                            <!--Validation Form-->
-                            <script>
-                                function validateForm() {
-                                    /*Mengambil Nilai*/
-                                    var name = document.forms ["costumer-form"] ["full-name"].value;
-                                    var email = document.forms ["costumer-form"] ["email"].value;
-                                    var destination = document.forms ["costumer-form"] ["destination"].value;
-                                    console.log({ name, email, destination });
-                                    /*Validasi Form*/
-                                    if ( name =="" || email =="" || destination =="" || destination =="Select Your Destination") {
-                                        alert ("Input tidak boleh kosong");
-                                        return false;
-                                    }
-                                } 
-                            </script>
                         </div>
                     </div>
                 </div>
@@ -302,7 +261,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <img class="logo" src="pngwing.com (2).png" alt="logo">
+                <img class="logo" src="assets/Logo-travel.png" alt="logo">
                 <div>
                     <h4>Term Since</h4>
                     <h4>Privacy Policy</h4>
@@ -312,4 +271,5 @@
         </div>
     </footer>
 </body>
+<script src="js/index.js"></script>
 </html>
